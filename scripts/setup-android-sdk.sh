@@ -5,7 +5,6 @@ set -e # exit on error
 # Create and set up Android SDK
 echo "Setting up Android SDK..."
 mkdir -p android/sdk
-pwd
 cd android/sdk
 pwd
 wget --output-document=cmdline-tools.zip --quiet https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
@@ -24,3 +23,6 @@ echo "BUILD_TOOLS=$BUILD_TOOLS" >> $GITHUB_ENV
 
 # Verify setup
 echo "Android SDK setup completed."
+echo "$CMD_TOOLS"
+echo "$CMD_TOOLS"
+
