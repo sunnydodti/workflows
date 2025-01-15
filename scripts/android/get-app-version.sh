@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-
+echo $1
 if [ -z "$1" ]; then
 echo "Error: Path to pubspec.yml is required." >&2
   exit 1
