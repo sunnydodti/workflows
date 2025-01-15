@@ -11,7 +11,7 @@ fi
 
 APK_DIR="$1/build/app/outputs/flutter-apk"
 
-apksigner sign  \
+${{ vars.BUILD_TOOLS }}/apksigner sign  \
   -v \
   --in $APK_DIR/app-armeabi-v7a$2-release.apk \
   --ks release-keystore.jks \
