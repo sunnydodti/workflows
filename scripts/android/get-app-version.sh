@@ -7,4 +7,5 @@ echo "Error: Path to pubspec.yml is required." >&2
 fi
 PUBSPEC_PATH=$1/pubspec.yaml
 APP_VERSION="$(yq -r '.version' "$PUBSPEC_PATH")-dev"
-echo "app_version=$APP_VERSION" >> $GITHUB_OUTPUT
+echo "APP_VERSION=$APP_VERSION" >> $GITHUB_ENV
+echo "APP_VERSION: $APP_VERSION"
