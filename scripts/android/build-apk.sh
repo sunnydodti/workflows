@@ -11,6 +11,7 @@ fi
 cd $1
 echo "running pub get"
 flutter pub get
+
 echo "building apk"
 echo "flavour: $2"
 echo "main: $3"
