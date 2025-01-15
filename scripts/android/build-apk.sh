@@ -7,9 +7,10 @@ if [ -z "$1" ]; then
   echo "reading in base dir ." 
   $1 = "."
 fi
-
+pwd
 cd $1
 echo "running pub get"
+pwd
 flutter pub get
 
 echo "building apk"
