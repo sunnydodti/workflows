@@ -1,5 +1,5 @@
 #!/bin/bash
-# $1 = apk dir
+# $1 = flutter root
 # $2 = suffix - "-dev"
 # $3 = version
 set -e
