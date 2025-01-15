@@ -23,6 +23,6 @@ echo "BUILD_TOOLS=$BUILD_TOOLS" >> $GITHUB_ENV
 
 # Verify setup
 echo "Android SDK setup completed."
-echo "$CMD_TOOLS"
-echo "$CMD_TOOLS"
+echo "CMD_TOOLS: $CMD_TOOLS"
+echo "BUILD_TOOLS: $BUILD_TOOLS"
 
