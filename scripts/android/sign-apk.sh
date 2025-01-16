@@ -43,7 +43,7 @@ echo "signing $APK_DIR/app-x86_64$2-release.apk"
 $APK_SIGNER sign  \
   -v \
   --in $APK_DIR/app-x86_64$2-release.apk \
-  --ks release-keystore.jks \
+  --ks keystore.jks \
   --ks-key-alias $KEY_ALIAS \
   --ks-pass "pass:$KEYSTORE_PASSWORD" \
   --key-pass "pass:$KEY_PASSWORD"
