@@ -25,7 +25,7 @@ echo "signing $APK_DIR/app-armeabi-v7a$2-release.apk"
 $APK_SIGNER sign  \
   -v \
   --in $APK_DIR/app-armeabi-v7a$2-release.apk \
-  --ks release-keystore.jks \
+  --ks keystore.jks \
   --ks-key-alias $KEY_ALIAS \
   --ks-pass "pass:$KEYSTORE_PASSWORD" \
   --key-pass "pass:$KEY_PASSWORD"
@@ -34,7 +34,7 @@ echo "signing $APK_DIR/app-arm64-v8a$2-release.apk"
 $APK_SIGNER sign  \
   -v \
   --in $APK_DIR/app-arm64-v8a$2-release.apk \
-  --ks release-keystore.jks \
+  --ks keystore.jks \
   --ks-key-alias $KEY_ALIAS \
   --ks-pass "pass:$KEYSTORE_PASSWORD" \
   --key-pass "pass:$KEY_PASSWORD"
