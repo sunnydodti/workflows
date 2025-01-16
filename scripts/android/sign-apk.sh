@@ -2,6 +2,10 @@
 # $1 = flutter root
 # $2 = suffix - "-dev"
 # $3 = version
+# $4 = keystore password
+# $3 = key alias for signing
+# $3 = key password
+
 set -e
 
 if [ -z "$1" ]; then
